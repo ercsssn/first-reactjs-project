@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="react.development.js"></script>
+    <script src="react-dom.development.js"></script>
+    <script src="babel.min.js"></script> 
+    
+    <script type="text/babel">
+        function doRender(elem,dest)
+        {
+            ReactDOM.render(elem, document.getElementById(dest))
+        }
+
+        function Welcome(props)
+        {
+            return <h1>Hello, {props.name}</h1>
+        }
+
+        doRender(<Welcome name='Abdul'/>,'hello')
+    </script>
+</head>
+<body>
+    <div id="hello" style="font-family: monospace;"></div>
+    
+</body>
+</html>
