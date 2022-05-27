@@ -10,18 +10,23 @@
     <script src="babel.min.js"></script> 
     
     <script type="text/babel">
-        class One extends React.Component
+        // class One extends React.Component
+        // {
+        //     render()
+        //     {
+        //         return <p>By Jeeves, it works!</p>
+        //     }
+        // }
+        function Two()
         {
-            render()
-            {
-                return <p>By Jeeves, it works!</p>
-            }
+            return <p>And this, by Jove!</p>
         }
-        ReactDOM.render(<One />, document.getElementById('div1'))
+        ReactDOM.render(<Two />, document.getElementById('div2'))
     </script>
 </head>
 <body>
-    <div id="div1" style='font-family:monospace'></div>
+    <!-- <div id="div1" style='font-family:monospace'></div> -->
+    <div id="div2" style='font-family:monospace'></div>
     
 </body>
 </html>
